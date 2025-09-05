@@ -9,11 +9,19 @@ body {
 header {
     background-color: #4a90e2;
     color: #fff;
-    padding: 2rem 1rem;
+    padding: 20px;
     text-align: center;
+    justify-content: space-between;
     font-size: 1.8rem;
     font-weight: bold;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+}
+
+
+#logo-link {
+    margin-top: 20px;
+    margin-right: 20px;
 }
 
 main {
@@ -34,7 +42,6 @@ table {
 th,
 td {
     padding: 1rem;
-    text-align: left;
 }
 
 th {
@@ -47,24 +54,29 @@ tr:nth-child(even) {
     background-color: #fafafa;
 }
 
- /* Ссылки в Project Name */
- .task-link {
-     color: #555;
-     text-decoration: none;
-     font-weight: 500;
- }
+tr td:nth-child(2) {
+    text-align: center;
+    vertical-align: middle;
+}
 
- .task-link:hover {
-     color: #4a90e2;
- }
+/* Ссылки в Project Name */
+.task-link {
+    color: #555;
+    text-decoration: none;
+    font-weight: 500;
+}
 
- /* Ссылки в Solution */
- .solution-link {
-     color: #4a90e2;
-     text-decoration: none;
-     font-weight: 600;
- }
+.task-link:hover {
+    color: #4a90e2;
+}
 
- .solution-link:hover {
-     text-decoration: underline;
- }
+/* Ссылки в Solution */
+.solution-link {
+    color: #4a90e2;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.solution-link:hover {
+    text-decoration: underline;
+}
