@@ -82,31 +82,32 @@ tr td:nth-child(2) {
 }
 
 
-/* return button "Main page" */
+/* return button "Return to main page" */
 .mnu {
     position: fixed;
-    top: 20px;
-    left: 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
     z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    /* лёгкая тень снизу */
 }
 
 .mnu #menu-btn {
-    display: inline-block;
-    padding: 10px 16px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 14px 0;
     background-color: #3498db;
     color: white;
-    border-radius: 6px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     text-decoration: none;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-    width: auto;
-    /* убираем 100% */
+    transition: background-color 0.3s;
+    box-sizing: border-box;
 }
 
 .mnu #menu-btn:hover {
     background-color: #2980b9;
-    transform: translateY(-2px);
 }
