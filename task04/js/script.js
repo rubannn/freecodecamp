@@ -1,5 +1,5 @@
 // Provided variables
-let price = 3.26;
+let price = 20;
 let cid = [
   ['PENNY', 1.01],
   ['NICKEL', 2.05],
@@ -12,15 +12,15 @@ let cid = [
   ['ONE HUNDRED', 100],
 ];
 
-const displayChangeDue = document.getElementById('change-due');
-const cashInput = document.getElementById('cash');
-const purchaseBtn = document.getElementById('purchase-btn');
-
 // Display initial values
 document.getElementById('price-value').textContent = `$${price.toFixed(2)}`;
 document.getElementById(
   'cid-value'
 ).textContent = `$${calculateTotalCid().toFixed(2)}`;
+
+const displayChangeDue = document.getElementById('change-due');
+const cashInput = document.getElementById('cash');
+const purchaseBtn = document.getElementById('purchase-btn');
 
 // Calculate total cash in drawer
 function calculateTotalCid() {
@@ -134,7 +134,7 @@ function formatResult(result) {
       'TEN',
       'TWENTY',
       'ONE HUNDRED',
-    ];
+    ].reverse();
 
     currencyOrder.forEach(unit => {
       const item = result.change.find(i => i[0] === unit);
