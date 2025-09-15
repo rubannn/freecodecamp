@@ -1,2 +1,2 @@
-# freecodecamp
-freecodecamp solutions
+## freecodecamp
+#### JavaScript Algorithms and Data Structures - solution
