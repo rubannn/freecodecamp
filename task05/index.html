@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RPG Creature Search App</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <h1>RPG Creature Search</h1>
+      <p>Search for creatures by name or ID</p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+      <!-- Input -->
+      <div class="input-group">
+        <label for="search-input">Enter Creature Name or ID [1..20]:</label>
+        <input type="text" id="search-input" required placeholder="e.g. dragon, 15" />
+      </div>
+      <button id="search-button">Search</button>
+
+      <!-- Result Section -->
+      <div class="result" id="result">
+        <h3>Creature Information</h3>
+
+        <!-- Info Box -->
+        <div class="info-box">
+          <div class="info-item">
+            <span class="label">Name:</span>
+            <span class="value" id="creature-name"></span>
+          </div>
+          <div class="info-item">
+            <span class="label">ID:</span>
+            <span class="value" id="creature-id"></span>
+          </div>
+          <div class="info-item">
+            <span class="label">Weight:</span>
+            <span class="value" id="weight"></span>
+          </div>
+          <div class="info-item">
+            <span class="label">Height:</span>
+            <span class="value" id="height"></span>
+          </div>
+          <div class="info-item">
+            <span class="label">Types:</span>
+            <span class="value" id="types"></span>
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="info-box">
+          <div class="info-item">
+            <span class="label">HP:</span>
+            <span class="value" id="hp"></span>
+          </div>
+          <div class="info-item">
+            <span class="label">Attack:</span>
+            <span class="value" id="attack"></span>
+          </div>
+          <div class="info-item">
+            <span class="label">Defense:</span>
+            <span class="value" id="defense"></span>
+          </div>
+          <div class="info-item">
+            <span class="label">Special Attack:</span>
+            <span class="value" id="special-attack"></span>
+          </div>
+          <div class="info-item">
+            <span class="label">Special Defense:</span>
+            <span class="value" id="special-defense"></span>
+          </div>
+          <div class="info-item">
+            <span class="label">Speed:</span>
+            <span class="value" id="speed"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS Script (API handling will be here) -->
+  <script type="module" src="./js/script.js"></script>
+</body>
+
+</html>
